@@ -20,4 +20,11 @@ describe Solver do
       end
     end
   end
+
+  describe "#reverse" do
+    it "Should returns word reversed" do
+      word = solver.reverse "hello"
+      expect(word).to eq "olleh"
+    end
+  end
 end
