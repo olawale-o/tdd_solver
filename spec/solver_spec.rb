@@ -21,30 +21,30 @@ describe Solver do
     end
   end
 
-  describe "#reverse" do
-    it "Should returns word reversed" do
-      word = solver.reverse "hello"
-      expect(word).to eq "olleh"
+  describe '#reverse' do
+    it 'Should returns word reversed' do
+      word = solver.reverse 'hello'
+      expect(word).to eq 'olleh'
     end
   end
 
-  describe "#fizzbuzz" do
-    it "Should returns fizz if number divisible by 3" do
+  describe '#fizzbuzz' do
+    it 'Should returns fizz if number divisible by 3' do
       result = solver.fizzbuzz 3
-      expect(result).to eq "fizz"
+      expect(result).to eq 'fizz'
     end
 
-    it "Should returns fizz if number divisible by 5" do
+    it 'Should returns fizz if number divisible by 5' do
       result = solver.fizzbuzz 5
-      expect(result).to eq "buzz"
+      expect(result).to eq 'buzz'
     end
 
-    it "Should returns fizz if number divisible by 3 and 5" do
+    it 'Should returns fizz if number divisible by 3 and 5' do
       result = solver.fizzbuzz 15
-      expect(result).to eq "fizzbuzz"
+      expect(result).to eq 'fizzbuzz'
     end
 
-    it "Should returns 7 if number = 7" do
+    it 'Should returns 7 if number = 7' do
       result = solver.fizzbuzz 7
       expect(result).to eq(7)
     end
